@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Minha_pagina_web</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Flavio</h1>
+<p id="time"></p>
+<p id="visitCount"></p>
+
+<!-- Foto de Perfil -->
+<img src="https://i.postimg.cc/np6QP7JD/669726e1123a371667fa926f-66553f0235960af8637b5efc-image-XXgs5-H8-1716768935448-raw-avatar.jpg" alt="Foto de Perfil" style="width: 150px; height: 150px; border-radius: 50%;">
+
+<button id="toggleTheme">Alternar Tema</button>
+
+<p>Olá! Meu nome é Flavio, tenho 29 anos e esta é uma breve descrição sobre mim. Sou apaixonado por design e sempre em busca de novos aprendizados. Meu foco é criar soluções inovadoras e explorar o mundo da tecnologia.</p>
+
+<p>
+    Ao longo da minha jornada, desenvolvi habilidades em diversas áreas, como <strong>HTML, CSS, JavaScript</strong> e <strong>design responsivo</strong>. Tenho experiência prática na construção de sites e aplicações, e estou sempre em busca de novos desafios que me permitam aprimorar minhas habilidades.
+</p>
+<p>
+    Meu objetivo profissional é continuar a expandir meu conhecimento em <strong>desenvolvimento front-end</strong> e explorar novas tecnologias, como <strong>React</strong> e <strong>Node.js</strong>, para me tornar um desenvolvedor full-stack de alto nível.
+</p>
+<p>
+    O que me motiva é a possibilidade de criar projetos que tragam benefícios reais às pessoas. Amo aprender, testar novas ideias e ver o impacto positivo de um bom trabalho de desenvolvimento.
+</p>
+
+<h2>Meus Hobbies e Interesses</h2>
+<ul>
+    <li>Programação</li>
+    <li>Desenho</li>
+    <li>Leitura</li>
+    <li>Viajar</li>
+</ul>
+
+<section id="meus-projetos">
+    <h2>Meus Projetos</h2>
+    <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Projeto 1</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Sistema de Tarefas</h4>
+                    <p>
+                        Uma aplicação simples para gerenciar tarefas diárias, com cadastro, marcação de concluídas e filtros por prioridade.
+                        <br><strong>Tecnologias:</strong> HTML, CSS, JavaScript.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card card-project-2">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Projeto 2</h3>
+                </div>
+                <div class="card-back">
+                    <h4>Gestão Financeira</h4>
+                    <p>
+                        Ferramenta simples para acompanhar receitas e despesas.
+                        <br><strong>Tecnologias:</strong> HTML, CSS, JavaScript.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div>
+    <h2>Adicionar Hobbies</h2>
+    <input type="text" id="hobby-input" placeholder="Digite seu hobby">
+    <button id="add-hobby">Adicionar Hobby</button>
+    <ul id="hobby-list"></ul>
+</div>
+
+<p id="visits"></p>
+
+<button id="backToTop">↑</button>
+
+<h2>Entre em Contato</h2>
+<form>
+    <label for="name">Nome:</label><br>
+    <input type="text" id="name" name="name" placeholder="Digite seu nome"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Digite seu email"><br><br>
+
+    <label for="message">Mensagem:</label><br>
+    <textarea id="message" name="message" rows="4" placeholder="Escreva sua mensagem"></textarea><br><br>
+ <button type="submit">Enviar</button>
+</form>
+
+<section id="instagram-link">
+    <h2>Me siga nas redes sociais:</h2>
+    <a href="https://www.instagram.com/flavio_nascimento2021/profilecard/?igsh=ZWkzb3Z0ZDNrZW5q" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; background-color: #E1306C; padding: 10px 20px; border-radius: 5px; color: white; font-family: Arial, sans-serif; font-size: 16px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30" style="margin-right: 10px;">
+        Instagram de Flávio
+    </a>
+</section>
+
+<footer>
+    <p>&copy; 2024 Flavio. Todos os direitos reservados.</p>
+</footer>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

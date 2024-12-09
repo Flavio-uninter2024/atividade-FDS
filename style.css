@@ -1,0 +1,178 @@
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradiente laranja suave */
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+
+#meus-projetos {
+    padding: 20px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex; /* Garantir que os cards fiquem lado a lado */
+    justify-content: center; /* Centralizar os cards no contêiner */
+    gap: 20px; /* Espaço de 20px entre os cards */
+    flex-wrap: wrap; /* Permite que os cards se ajustem em telas menores */
+}
+
+.card {
+    width: 40%;  /* Reduzimos a largura para 40% */
+    min-width: 220px; /* Garante que os cards não fiquem menores que 220px */
+    max-width: 300px; /* Limita o tamanho máximo dos cards */
+    height: 250px;  /* Reduzimos a altura para 250px */
+    perspective: 1000px; /* Aplica a perspectiva para o efeito 3D */
+    transition: transform 0.3s;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.6s; /* Transição suave */
+    transform-style: preserve-3d; /* Para garantir que o conteúdo no verso também seja visível */
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg); /* Faz o card girar ao passar o mouse */
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta o verso do card quando ele gira */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-front {
+    background-color: #007bff; /* Azul para o Card 1 */
+    color: white;
+}
+
+.card-back {
+    background-color: #fff;
+    color: #333;
+    transform: rotateY(180deg); /* Gira o verso para ficar de costas inicialmente */
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+.card-back h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-align: center;
+}
+
+/* Card 2 - Verde */
+.card-project-2 .card-front {
+    background-color: #28a745; /* Verde para o Card 2 */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o Footer Fino */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;  /* Reduzimos o espaçamento interno */
+    font-size: 0.9em;  /* Diminuímos o tamanho da fonte */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Flávio Nascimento</title>
+    <style>
+        /* Estilo para o título */
+        h1 {
+            font-family: 'Arial', sans-serif; /* Exemplo de fonte estilizada para o título */
+            color: #2c3e50; /* Cor escura */
+        }
+
+        /* Estilo para o restante do conteúdo */
+        body {
+            font-family: 'Verdana', sans-serif; /* Outra fonte para o conteúdo */
+            color: #34495e; /* Cor cinza escura */
+        }
+
+        /* Estilo para o link */
+        a {
+            font-family: 'Courier New', monospace; /* Fonte estilizada para links */
+            color: #2980b9; /* Cor azul */
+            text-decoration: none; /* Remove o sublinhado do link */
+        }
+
+        /* Estilo para o link ao passar o mouse */
+        a:hover {
+            color: #1abc9c; /* Cor verde clara ao passar o mouse */
+        }
+    </style>
